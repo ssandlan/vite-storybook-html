@@ -1,11 +1,17 @@
 // SMACSS
 // Typography
 
-// Goolge font - DM Sans
+// Google font - DM Sans
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
+// TYPOGRAPHY CSS VARIABLES
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --base-font-weight: 450;
+}
+
 .display-text {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family);
   letter-spacing: -0.03em;
   line-height: 120%;
   font-weight: 450;
@@ -96,7 +102,7 @@
 }
 
 .subheading-text {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family);
   letter-spacing: 0.08em;
   line-height: 160%;
   font-weight: 500;
@@ -120,7 +126,7 @@
 }
 
 .heading-text {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family);
   letter-spacing: -0.03em;
   line-height: 150%;
   font-weight: 450;
@@ -138,7 +144,7 @@
 }
 
 .bodytext {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family);
   line-height: 1.5;
   font-weight: 400;
 }

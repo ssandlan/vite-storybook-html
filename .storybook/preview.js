@@ -2,6 +2,7 @@
 
 import "../src/css/index.scss";
 import "../src/components/core-components/button/button.scss";
+import "../src/components/core-components/rich-text/rich-text.scss";
 
 const preview = {
   parameters: {
