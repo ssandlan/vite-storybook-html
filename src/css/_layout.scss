@@ -1,0 +1,77 @@
+// Grid Wrapper
+.l-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.l-grid.demo > * {
+  background-color: orange;
+  text-align: center;
+  padding: 0.125rem 0.25rem;
+}
+
+.l-grid > * {
+  grid-column: span 2;
+  @media (min-width: 83.5rem) {
+    // 1336px to match HCA
+    grid-column: span 1;
+  }
+}
+
+.l-grid > .l-grid-half {
+  grid-column: span 6;
+}
+
+.l-grid > .l-grid-third {
+  grid-column: span 4;
+}
+
+.l-grid > .l-grid-default {
+  grid-column: 1 / -1;
+}
+
+.l-grid > .l-grid-floating {
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+
+// SMACSS
+// Sections/blocks of the page, hold more than one module
+// can use prefix like grid-
+// this is the only primary category type to use ID selectors
+
+// #nav {
+// }
+
+// #header {
+// }
+
+// #article {
+// }
+
+// #footer {
+// }
+
+// .layout-highlight {
+// } // bg colours, borders, etc.
+// .layout-bold {
+// }
+
+// .layout-constrained {
+// } // fixed width layout, max-widths etc
+
+// .layout-split {
+// } // split layout, e.g. two columns
+
+// .layout-split > :first-child {} // first column
+// .layout-split > :nth-child(1) {}
+// .layout-split > :last-child {} // second/last column
+// .layout-grid-3 {} // 3 column grid
+// Using layout classes
+// .l-inline > * {
+//   display: inline-block;
+// } // inline layout
+// .l-stacked > * {
+//   display: block;
+// } // stacked layout
