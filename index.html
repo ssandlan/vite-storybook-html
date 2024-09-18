@@ -5,11 +5,37 @@
     <meta charset="UTF-8" />
 
     <title>Vite App</title>
+    <style>
+      #app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+      }
+    </style>
   </head>
 
   <body>
     <div id="app">
+      <h1>Components</h1>
+
+      <h2>Button</h2>
+
       <div class="button button-large button-full-dark">
+        <button type="button">
+          <span> Large <strong>Button</strong> </span>
+        </button>
+      </div>
+
+      <div class="button button-large button-full-light">
+        <button type="button">
+          <span> Large <strong>Button</strong> </span>
+        </button>
+      </div>
+
+      <div class="button button-large button-outline-dark">
         <button type="button">
           <span> Large <strong>Button</strong> </span>
         </button>
