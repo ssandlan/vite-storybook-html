@@ -1,4 +1,4 @@
-const a=`<div class="l-grid demo">\r
+const l=`<div class="l-grid demo">\r
   <div>no class</div>\r
   <div>no class</div>\r
   <div>no class</div>\r
@@ -18,4 +18,4 @@ const a=`<div class="l-grid demo">\r
 \r
   <div class="l-grid-default">.l-grid-default</div>\r
 </div>\r
-`,l={title:"Foundation/Grids",tags:["autodocs"]},d=()=>a;var i,s,r;d.parameters={...d.parameters,docs:{...(i=d.parameters)==null?void 0:i.docs,source:{originalSource:"() => GridExamples",...(r=(s=d.parameters)==null?void 0:s.docs)==null?void 0:r.source}}};const n=["Grids"];export{d as Grids,n as __namedExportsOrder,l as default};
+`,n={title:"Foundation/Grids"},d=()=>l;var i,r,s;d.parameters={...d.parameters,docs:{...(i=d.parameters)==null?void 0:i.docs,source:{originalSource:"() => GridExamples",...(s=(r=d.parameters)==null?void 0:r.docs)==null?void 0:s.source}}};const a=["Grids"],o=Object.freeze(Object.defineProperty({__proto__:null,Grids:d,__namedExportsOrder:a,default:n},Symbol.toStringTag,{value:"Module"}));export{o as G,d as a};

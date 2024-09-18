@@ -1,6 +1,7 @@
 /** @type { import('@storybook/html').Preview } */
 
 import "../src/css/index.scss";
+import "../src/components/core-components/button/button.scss";
 
 const preview = {
   parameters: {
