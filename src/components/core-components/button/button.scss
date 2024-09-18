@@ -53,7 +53,9 @@
     }
   }
 
-  button {
+  button,
+  label,
+  a {
     border-radius: 3rem;
     cursor: pointer;
     display: flex;
@@ -66,6 +68,10 @@
     font-size: 1rem;
     font-weight: 500;
   }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .button-large {
@@ -73,7 +79,6 @@
   label,
   a {
     padding: 1rem 1.5rem;
-    min-height: 4rem;
     @media (min-width: 37.5rem) {
       padding: 1rem 3.5rem;
     }

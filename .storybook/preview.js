@@ -6,6 +6,12 @@ import "../src/components/core-components/rich-text/rich-text.scss";
 
 const preview = {
   parameters: {
+    backgrounds: {
+      values: [
+        { name: "light", value: "#fff" },
+        { name: "dark", value: "#0c2141" },
+      ],
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
