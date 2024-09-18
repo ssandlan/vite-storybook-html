@@ -1,298 +1,298 @@
+:root {
+  // COLOURS
+  // PRIMARY
+  --teal-140: #3b8783;
+  --teal-120: #479e9a;
+  --teal-100: #77c7c3;
+  --teal-80: #7ac6c2;
+  --teal-40: #a4d8d6;
+  --teal-20: #c2e6e3;
+  --teal-10: #e0f2f1;
+  --teal-5: #eff8f8;
+  --navy-blue-120: #09182e;
+  --navy-blue-100: #0c2141;
+  --navy-blue-90: #21304a;
+  --navy-blue-80: #35445c;
+  --navy-blue-70: #4b596f;
+  --navy-blue-60: #626f82;
+  --navy-blue-50: #7a8596;
+  --navy-blue-40: #949caa;
+  --navy-blue-30: #adb4bf;
+  --navy-blue-20: #c7cdd4;
+  --navy-blue-10: #e3e6e9;
+  --navy-blue-9: #eaeced;
+  --navy-blue-5: #f1f2f4;
+  --denim-100: #00558c;
+  --denim-80: #2d6c99;
+  --denim-50: #5d88b2;
+  --denim-40: #8eb3cb; // (Ceruelan 25)
+  --denim-20: #c5d8e5;
+  --denim-10: #e1ebf1;
+  --denim-5: #f0f5f8;
+  --white: #fff;
+
+  /* || SECONDARY */
+  --fern-100: #98c396;
+  --fern-80: #a4c8a1;
+  --fern-60: #b9d6b8;
+  --fern-40: #d0e3cf;
+  --fern-20: #e7f1e7;
+  --fern-10: #f4f8f2;
+  --fern-5: #f4f8f2;
+  --goldenrod-100: #ffe9c0;
+  --goldenrod-60: #fff0d4;
+  --goldenrod-40: #fff5e2;
+  --goldenrod-20: #fffaf0;
+  --tangerine-100: #ffd8a5;
+  --tangerine-70: #ffe0b8;
+  --tangerine-30: #fff1e0;
+  --tangerine-20: #fef8f5;
+  --orange-150: #e37149;
+  --orange-100: #f0ac94;
+  --orange-80: #f1b59f;
+  --orange-60: #f5c6b7;
+  --orange-40: #f8d9ce;
+  --orange-20: #fcebe7;
+  --red-120: #c72731;
+  --red-100: #da3943;
+  --red-60: #e9888e;
+  --red-10: #f8d7d9;
+}
+
 // Button themes
 @mixin apply-cta-full-dark {
   // Base
-  --cta-full-background: #{$navy-blue-100};
-  --cta-full-text: #{$white};
-  --cta-full-border: #{$navy-blue-100};
+  --cta-full-background: var(--navy-blue-100);
+  --cta-full-text: var(--white);
+  --cta-full-border: var(--navy-blue-100);
 
   // Hover
-  --cta-full-hover-background: #{$white};
-  --cta-full-hover-text: #{$navy-blue-100};
-  --cta-full-hover-border: #{$navy-blue-100};
+  --cta-full-hover-background: var(--white);
+  --cta-full-hover-text: var(--navy-blue-100);
+  --cta-full-hover-border: var(--navy-blue-100);
 
   // Disabled
-  --cta-full-disabled-background: #{$navy-blue-40};
-  --cta-full-disabled-text: #{$navy-blue-10};
-  --cta-full-disabled-border: #{$navy-blue-40};
+  --cta-full-disabled-background: var(--navy-blue-40);
+  --cta-full-disabled-text: var(--navy-blue-10);
+  --cta-full-disabled-border: var(--navy-blue-40);
 
   // Active
-  --cta-full-active-background: #{$navy-blue-40};
-  --cta-full-active-text: #{$navy-blue-40};
-  --cta-full-active-border: #{$navy-blue-40};
+  --cta-full-active-background: var(--navy-blue-40);
+  --cta-full-active-text: var(--navy-blue-40);
+  --cta-full-active-border: var(--navy-blue-40);
 
   // Focus
-  --cta-full-focus-background: #{$navy-blue-40};
-  --cta-full-focus-text: #{$navy-blue-40};
-  --cta-full-focus-border: #{$navy-blue-40};
-  --cta-full-focus-outline: #{$teal-100};
+  --cta-full-focus-background: var(--navy-blue-40);
+  --cta-full-focus-text: var(--navy-blue-40);
+  --cta-full-focus-border: var(--navy-blue-40);
+  --cta-full-focus-outline: var(--teal-100);
 }
 @mixin apply-cta-full-light {
   // Base
-  --cta-full-background: #{$teal-100};
-  --cta-full-text: #{$navy-blue-100};
-  --cta-full-border: #{$teal-100};
+  --cta-full-background: var(--teal-100);
+  --cta-full-text: var(--navy-blue-100);
+  --cta-full-border: var(--teal-100);
 
   // Hover
-  --cta-full-hover-background: #{$navy-blue-100};
-  --cta-full-hover-text: #{$white};
-  --cta-full-hover-border: #{$white};
+  --cta-full-hover-background: var(--navy-blue-100);
+  --cta-full-hover-text: var(--white);
+  --cta-full-hover-border: var(--white);
 
   // Disabled
-  --cta-full-disabled-background: #{$navy-blue-60};
-  --cta-full-disabled-text: #{$navy-blue-20};
-  --cta-full-disabled-border: #{$navy-blue-60};
+  --cta-full-disabled-background: var(--navy-blue-60);
+  --cta-full-disabled-text: var(--navy-blue-20);
+  --cta-full-disabled-border: var(--navy-blue-60);
 
   // Active
-  --cta-full-active-background: #{$navy-blue-100};
-  --cta-full-active-text: #{$navy-blue-10};
-  --cta-full-active-border: #{$navy-blue-10};
+  --cta-full-active-background: var(--navy-blue-100);
+  --cta-full-active-text: var(--navy-blue-10);
+  --cta-full-active-border: var(--navy-blue-10);
 
   // Focus
-  --cta-full-focus-outline: #{$teal-100};
+  --cta-full-focus-outline: var(--teal-100);
 }
 @mixin apply-cta-full-light-blue {
   // Base
-  --cta-full-background: #{$teal-5};
-  --cta-full-text: #{$navy-blue-100};
-  --cta-full-border: #{$teal-5};
+  --cta-full-background: var(--teal-5);
+  --cta-full-text: var(--navy-blue-100);
+  --cta-full-border: var(--teal-5);
 
   // Hover
-  --cta-full-hover-background: #{$teal-10};
+  --cta-full-hover-background: var(--teal-10);
   --background: var(
     --cta-full-hover-background
   ); // Override theme functionality for this button
 
-  --cta-full-hover-border: #{$teal-10};
+  --cta-full-hover-border: var(--teal-10);
 
   // Disabled
-  --cta-full-disabled-text: #{$navy-blue-40};
-  --cta-full-disabled-border: #{$teal-5};
-  --cta-full-disabled-background: #{$teal-5};
+  --cta-full-disabled-text: var(--navy-blue-40);
+  --cta-full-disabled-border: var(--teal-5);
+  --cta-full-disabled-background: var(--teal-5);
 
   // Active
-  --cta-full-active-background: #{$teal-5};
+  --cta-full-active-background: var(--teal-5);
 
   // Focus
-  --cta-full-focus-outline: #{$navy-blue-100};
-  --cta-full-focus-border: #{$teal-5};
+  --cta-full-focus-outline: var(--navy-blue-100);
+  --cta-full-focus-border: var(--teal-5);
 }
 @mixin apply-cta-outline-dark {
   // Base
   --cta-outline-background: transparent;
-  --cta-outline-text: #{$navy-blue-100};
-  --cta-outline-border: #{$navy-blue-100};
+  --cta-outline-text: var(--navy-blue-100);
+  --cta-outline-border: var(--navy-blue-100);
 
   // Hover
-  --cta-outline-hover-background: #{$navy-blue-100};
-  --cta-outline-hover-text: #{$white};
-  --cta-outline-hover-border: #{$navy-blue-100};
+  --cta-outline-hover-background: var(--navy-blue-100);
+  --cta-outline-hover-text: var(--white);
+  --cta-outline-hover-border: var(--navy-blue-100);
 
   // Disabled
-  --cta-outline-disabled-background: #{$white};
-  --cta-outline-disabled-text: #{$navy-blue-40};
-  --cta-outline-disabled-border: #{$navy-blue-40};
+  --cta-outline-disabled-background: var(--white);
+  --cta-outline-disabled-text: var(--navy-blue-40);
+  --cta-outline-disabled-border: var(--navy-blue-40);
 
   // Active
-  --cta-outline-active-background: #{$navy-blue-60};
-  --cta-outline-active-text: #{$white};
-  --cta-outline-active-border: #{$navy-blue-60};
+  --cta-outline-active-background: var(--navy-blue-60);
+  --cta-outline-active-text: var(--white);
+  --cta-outline-active-border: var(--navy-blue-60);
 
   // Focus
-  --cta-outline-focus-outline: #{$navy-blue-100};
+  --cta-outline-focus-outline: var(--navy-blue-100);
 }
 @mixin apply-cta-outline-light {
   // Base
   --cta-outline-background: transparent;
-  --cta-outline-text: #{$white};
-  --cta-outline-border: #{$white};
+  --cta-outline-text: var(--white);
+  --cta-outline-border: var(--white);
 
   // Hover
-  --cta-outline-hover-background: #{$teal-100};
-  --cta-outline-hover-text: #{$navy-blue-100};
-  --cta-outline-hover-border: #{$teal-100};
+  --cta-outline-hover-background: var(--teal-100);
+  --cta-outline-hover-text: var(--navy-blue-100);
+  --cta-outline-hover-border: var(--teal-100);
 
   // Disabled
-  --cta-outline-disabled-background: #{$navy-blue-100};
-  --cta-outline-disabled-text: #{$navy-blue-20};
-  --cta-outline-disabled-border: #{$navy-blue-20};
+  --cta-outline-disabled-background: var(--navy-blue-100);
+  --cta-outline-disabled-text: var(--navy-blue-20);
+  --cta-outline-disabled-border: var(--navy-blue-20);
 
   // Active
-  --cta-outline-active-background: #{$teal-80};
-  --cta-outline-active-text: #{$navy-blue-100};
-  --cta-outline-active-border: #{$teal-80};
+  --cta-outline-active-background: var(--teal-80);
+  --cta-outline-active-text: var(--navy-blue-100);
+  --cta-outline-active-border: var(--teal-80);
 
   // Focus
-  --cta-outline-focus-outline: #{$white};
+  --cta-outline-focus-outline: var(--white);
 }
 @mixin apply-cta-social-light {
   // Base
-  --cta-social-background: #{$navy-blue-100};
-  --cta-social-text: #{$white};
-  --cta-social-border: #{$navy-blue-60};
+  --cta-social-background: var(--navy-blue-100);
+  --cta-social-text: var(--white);
+  --cta-social-border: var(--navy-blue-60);
 
   // Hover
-  --cta-social-hover-border: #{$white};
+  --cta-social-hover-border: var(--white);
 
   // Active
-  --cta-social-active-border: #{$navy-blue-40};
+  --cta-social-active-border: var(--navy-blue-40);
 
   // Focus
-  --cta-social-focus-border: #{$navy-blue-9};
-  --cta-social-focus-outline: #{$white};
+  --cta-social-focus-border: var(--navy-blue-9);
+  --cta-social-focus-outline: var(--white);
 }
 @mixin apply-cta-social-dark {
   // Base
-  --cta-social-background: #{$white};
-  --cta-social-text: #{$navy-blue-100};
-  --cta-social-border: #{$navy-blue-9};
+  --cta-social-background: var(--white);
+  --cta-social-text: var(--navy-blue-100);
+  --cta-social-border: var(--navy-blue-9);
 
   // Hover
-  --cta-social-hover-border: #{$navy-blue-100};
+  --cta-social-hover-border: var(--navy-blue-100);
 
   // Active
-  --cta-social-active-border: #{$navy-blue-40};
+  --cta-social-active-border: var(--navy-blue-40);
 
   // Focus
-  --cta-social-focus-border: #{$navy-blue-9};
-  --cta-social-focus-outline: #{$navy-blue-100};
+  --cta-social-focus-border: var(--navy-blue-9);
+  --cta-social-focus-outline: var(--navy-blue-100);
 }
 @mixin apply-cta-carousel-dark {
   // Base
-  --cta-carousel-background: #{$navy-blue-100};
-  --cta-carousel-text: #{$white};
-  --cta-carousel-border: #{$navy-blue-100};
+  --cta-carousel-background: var(--navy-blue-100);
+  --cta-carousel-text: var(--white);
+  --cta-carousel-border: var(--navy-blue-100);
 
   // Hover
-  --cta-carousel-hover-text: #{$navy-blue-100};
+  --cta-carousel-hover-text: var(--navy-blue-100);
 
   // Disabled
-  --cta-carousel-disabled-background: #{$navy-blue-40};
-  --cta-carousel-disabled-text: #{$navy-blue-10};
-  --cta-carousel-disabled-border: #{$navy-blue-40};
+  --cta-carousel-disabled-background: var(--navy-blue-40);
+  --cta-carousel-disabled-text: var(--navy-blue-10);
+  --cta-carousel-disabled-border: var(--navy-blue-40);
 
   // Active
-  --cta-carousel-active-background: #{$white};
-  --cta-carousel-active-text: #{$navy-blue-100};
-  --cta-carousel-active-border: #{$navy-blue-40};
+  --cta-carousel-active-background: var(--white);
+  --cta-carousel-active-text: var(--navy-blue-100);
+  --cta-carousel-active-border: var(--navy-blue-40);
 
   // Focus
-  --cta-carousel-focus-outline: #{$teal-100};
+  --cta-carousel-focus-outline: var(--teal-100);
 }
 @mixin apply-cta-carousel-light {
   // Base
-  --cta-carousel-background: #{$teal-100};
-  --cta-carousel-text: #{$navy-blue-100};
-  --cta-carousel-border: #{$teal-100};
+  --cta-carousel-background: var(--teal-100);
+  --cta-carousel-text: var(--navy-blue-100);
+  --cta-carousel-border: var(--teal-100);
 
   // Hover
-  --cta-carousel-hover-text: #{$white};
-  --cta-carousel-hover-border: #{$white};
+  --cta-carousel-hover-text: var(--white);
+  --cta-carousel-hover-border: var(--white);
 
   // Disabled
-  --cta-carousel-disabled-background: #{$navy-blue-40};
-  --cta-carousel-disabled-text: #{$navy-blue-10};
-  --cta-carousel-disabled-border: #{$navy-blue-40};
+  --cta-carousel-disabled-background: var(--navy-blue-40);
+  --cta-carousel-disabled-text: var(--navy-blue-10);
+  --cta-carousel-disabled-border: var(--navy-blue-40);
 
   // Active
-  --cta-carousel-active-background: #{$navy-blue-100};
-  --cta-carousel-active-text: #{$navy-blue-9};
-  --cta-carousel-active-border: #{$navy-blue-10};
+  --cta-carousel-active-background: var(--navy-blue-100);
+  --cta-carousel-active-text: var(--navy-blue-9);
+  --cta-carousel-active-border: var(--navy-blue-10);
 
   // Focus
-  --cta-carousel-focus-outline: #{$navy-blue-100};
+  --cta-carousel-focus-outline: var(--navy-blue-100);
 }
 
 // Text Buttons
 
 @mixin apply-text-buttons-dark {
   // Base
-  --cta-text: #{$navy-blue-100};
+  --cta-text: var(--navy-blue-100);
 
   // Disabled
-  --cta-disabled-text: #{$navy-blue-40};
+  --cta-disabled-text: var(--navy-blue-40);
 
   // Active
-  --cta-active-text: #{$navy-blue-40};
+  --cta-active-text: var(--navy-blue-40);
 }
 
 @mixin apply-text-buttons-light {
   // Base
-  --cta-text: #{$white};
+  --cta-text: var(--white);
 
   // Disabled
-  --cta-disabled-text: #{$navy-blue-40};
+  --cta-disabled-text: var(--navy-blue-40);
 
   // Active
-  --cta-active-text: #{$teal-100};
+  --cta-active-text: var(--teal-100);
 }
 
 @mixin apply-text-link-dark {
-  --text-link-active-text: #{$navy-blue-60};
-  --text-link-disabled-text: #{$navy-blue-40};
+  --text-link-active-text: var(--navy-blue-60);
+  --text-link-disabled-text: var(--navy-blue-40);
 }
 
 @mixin apply-text-link-light {
-  --text-link-active-text: #{$teal-100};
-  --text-link-disabled-text: #{$navy-blue-40};
+  --text-link-active-text: var(--teal-100);
+  --text-link-disabled-text: var(--navy-blue-40);
 }
-
-// Colours
-
-/* || PRIMARY */
-
-$teal-140: #3b8783;
-$teal-120: #479e9a;
-$teal-100: #77c7c3;
-$teal-80: #7ac6c2;
-$teal-40: #a4d8d6;
-$teal-20: #c2e6e3;
-$teal-10: #e0f2f1;
-$teal-5: #eff8f8;
-$navy-blue-120: #09182e;
-$navy-blue-100: #0c2141;
-$navy-blue-90: #21304a;
-$navy-blue-80: #35445c;
-$navy-blue-70: #4b596f;
-$navy-blue-60: #626f82;
-$navy-blue-50: #7a8596;
-$navy-blue-40: #949caa;
-$navy-blue-30: #adb4bf;
-$navy-blue-20: #c7cdd4;
-$navy-blue-10: #e3e6e9;
-$navy-blue-9: #eaeced;
-$navy-blue-5: #f1f2f4;
-$denim-100: #00558c;
-$denim-80: #2d6c99;
-$denim-50: #5d88b2;
-$denim-40: #8eb3cb; // (Ceruelan 25)
-$denim-20: #c5d8e5;
-$denim-10: #e1ebf1;
-$denim-5: #f0f5f8;
-$white: #fff;
-
-/* || SECONDARY */
-$fern-100: #98c396;
-$fern-80: #a4c8a1;
-$fern-60: #b9d6b8;
-$fern-40: #d0e3cf;
-$fern-20: #e7f1e7;
-$fern-10: #f4f8f2;
-$fern-5: #f4f8f2;
-$goldenrod-100: #ffe9c0;
-$goldenrod-60: #fff0d4;
-$goldenrod-40: #fff5e2;
-$goldenrod-20: #fffaf0;
-$tangerine-100: #ffd8a5;
-$tangerine-70: #ffe0b8;
-$tangerine-30: #fff1e0;
-$tangerine-20: #fef8f5;
-$orange-150: #e37149;
-$orange-100: #f0ac94;
-$orange-80: #f1b59f;
-$orange-60: #f5c6b7;
-$orange-40: #f8d9ce;
-$orange-20: #fcebe7;
-$red-120: #c72731;
-$red-100: #da3943;
-$red-60: #e9888e;
-$red-10: #f8d7d9;

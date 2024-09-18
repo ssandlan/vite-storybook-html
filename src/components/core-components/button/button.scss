@@ -26,7 +26,7 @@
     content: "";
     position: absolute;
     left: 0;
-    border-radius: 3rem;
+    border-radius: var(radius-large);
     background-color: $initialBackgroundColor;
     z-index: -2;
   }
@@ -43,20 +43,7 @@
   button,
   label,
   a {
-    @media (max-width: 37.5rem) {
-      width: 100%;
-      text-align: center;
-      // justify-content: center;
-    }
-    @media (min-width: 37.5rem) {
-      padding: 1rem 3.5rem;
-    }
-  }
-
-  button,
-  label,
-  a {
-    border-radius: 3rem;
+    border-radius: var(--radius-large);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -67,10 +54,39 @@
     letter-spacing: -0.03em;
     font-size: 1rem;
     font-weight: 500;
+    @media (max-width: 37.5rem) {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    @media (min-width: 37.5rem) {
+      padding: 1rem 3.5rem;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:disabled {
+      pointer-events: none;
+    }
+
+    & > span:has(svg) {
+      display: flex;
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
   }
 
   a {
     text-decoration: none;
+  }
+
+  button {
+    border: 0;
+    cursor: inherit;
   }
 }
 
@@ -78,9 +94,9 @@
   button,
   label,
   a {
-    padding: 1rem 1.5rem;
+    padding: 1rem var(--spacing-6);
     @media (min-width: 37.5rem) {
-      padding: 1rem 3.5rem;
+      padding: 1rem var(--spacing-8);
     }
   }
 }
@@ -89,8 +105,7 @@
   button,
   label,
   a {
-    padding: 1rem 2.5rem;
-    min-height: 3.5rem;
+    padding: 1rem var(--spacing-7);
   }
 }
 
