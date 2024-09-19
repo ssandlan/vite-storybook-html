@@ -33,8 +33,18 @@
 // Grid Wrapper
 .l-grid {
   display: grid;
-  grid-gap: 1rem;
+  // grid-gap: 1rem;
   grid-template-columns: repeat(var(--grid-columns-l), 1fr);
+  margin: 0 1rem;
+  @media (min-width: 600px) {
+    margin: 0 2rem;
+  }
+  @media (min-width: 1135px) {
+    margin: 0 5rem;
+  }
+  @media (min-width: 1440px) {
+    margin: 0 6.5rem;
+  }
 }
 
 .l-grid.demo > * {
@@ -44,10 +54,9 @@
 }
 
 .l-grid > * {
-  grid-column: span 2;
-  @media (min-width: 83.5rem) {
-    // 1336px to match HCA
-    grid-column: span 1;
+  grid-column: span 2; // grid items spans 2 cols, so 6 cols in total
+  @media (min-width: 1135px) {
+    grid-column: span 1; // grid items spans 1 col, so 12 cols in total
   }
 }
 
