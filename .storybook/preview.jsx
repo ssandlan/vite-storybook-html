@@ -5,6 +5,7 @@ import "../src/components/core-components/button/button.scss";
 import "../src/components/core-components/rich-text/rich-text.scss";
 
 const preview = {
+  // decorators: [(Story) => <Story />],
   parameters: {
     backgrounds: {
       values: [

@@ -26,7 +26,7 @@
     content: "";
     position: absolute;
     left: 0;
-    border-radius: var(radius-large);
+    border-radius: var(--radius-large);
     background-color: $initialBackgroundColor;
     z-index: -2;
   }
@@ -43,13 +43,17 @@
   button,
   label,
   a {
+    font-family: "DM Sans", sans-serif;
     border-radius: var(--radius-large);
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    font-family: "DM Sans", sans-serif;
+    padding: 0;
+    color: inherit;
+    position: relative;
+    width: max-content;
     line-height: 150%;
     letter-spacing: -0.03em;
     font-size: 1rem;
@@ -86,7 +90,7 @@
 
   button {
     border: 0;
-    cursor: inherit;
+    cursor: pointer;
   }
 }
 
@@ -94,7 +98,9 @@
   button,
   label,
   a {
+    box-sizing: border-box;
     padding: 1rem var(--spacing-6);
+    min-height: var(--spacing-9);
     @media (min-width: 37.5rem) {
       padding: 1rem var(--spacing-8);
     }
@@ -174,5 +180,37 @@
         border-color: var(--cta-outline-hover-border);
       }
     }
+  }
+}
+
+.button-outline-light {
+  @include apply-cta-outline-light;
+  button,
+  label,
+  a {
+    background-color: transparent;
+    color: var(--cta-outline-text);
+    border: 1px solid var(--cta-outline-border);
+
+    @media (hover: hover) and (pointer: fine) {
+      @include apply-hover-transition(
+        var(--cta-outline-background),
+        var(--cta-outline-hover-background)
+      );
+
+      &:hover {
+        color: var(--cta-outline-hover-text);
+        border-color: var(--cta-outline-hover-border);
+      }
+    }
+  }
+}
+
+.button-full-width {
+  a,
+  button,
+  label {
+    width: 100%;
+    justify-content: center;
   }
 }
