@@ -6,20 +6,33 @@
 
     <title>Vite App</title>
     <style>
-      #app {
+      .block-container {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        @media (min-width: 37.5rem) {
+          width: fit-content;
+        }
+      }
+      .flex-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 90vw;
+        max-width: 1200px;
         margin: 0 auto;
         gap: 1rem;
+      }
+
+      .dark-bg-container {
+        background-color: #0c2141;
       }
     </style>
   </head>
 
   <body>
-    <div id="app">
+    <div class="flex-container">
       <h1>Components</h1>
 
       <h2>Button</h2>
@@ -48,8 +61,67 @@
         </button>
       </div>
 
+      <div class="dark-bg-container" style="padding: 1rem">
+        <div class="button button-large button-outline-light">
+          <button type="button">
+            <span> Large <strong>Button</strong> </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="button button-small button-full-dark">
+        <button type="button">
+          <span>
+            Small
+            <strong>Button</strong>
+          </span>
+        </button>
+      </div>
+
+      <div class="button button-small button-full-light">
+        <button type="button">
+          <span>
+            Small
+            <strong>Button</strong>
+          </span>
+        </button>
+      </div>
+
+      <div class="button button-small button-outline-dark">
+        <button type="button">
+          <span>
+            Small
+            <strong>Button</strong>
+          </span>
+        </button>
+      </div>
+      <div class="dark-bg-container" style="padding: 1rem">
+        <div class="button button-small button-outline-light">
+          <button type="button">
+            <span>
+              Small
+              <strong>Button</strong>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-container">
+      <div style="padding: 1rem">
+        <div class="button button-large button-full-dark">
+          <button onclick='alert("Button was clicked")'>
+            Responsive container example
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-container">
       <div class="button button-large button-full-dark">
-        <button onclick="alert('Clicked')">Custom Button</button>
+        <button onclick='alert("Button was clicked")'>
+          Custom button with click event
+        </button>
       </div>
 
       <h2>Rich Text</h2>

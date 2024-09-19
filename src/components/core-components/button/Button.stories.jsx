@@ -4,6 +4,8 @@ import ButtonLargeOutlineDark from "./html/ButtonLargeOutlineDark.html?raw";
 import ButtonLargeOutlineLight from "./html/ButtonLargeOutlineLight.html?raw";
 import ButtonSmallFullDark from "./html/ButtonSmallFullDark.html?raw";
 import ButtonSmallFullLight from "./html/ButtonSmallFullLight.html?raw";
+import ButtonSmallOutlineDark from "./html/ButtonSmallOutlineDark.html?raw";
+import ButtonSmallOutlineLight from "./html/ButtonSmallOutlineLight.html?raw";
 import LinkLargeFullDark from "./html/LinkLargeFullDark.html?raw";
 import CustomButton from "./CustomButton.jsx";
 
@@ -61,6 +63,19 @@ export const SmallFullLight = {
   },
 };
 
+export const SmallOutlineDark = () => ButtonSmallOutlineDark;
+
+export const SmallOutlineLight = {
+  parameters: {
+    backgrounds: {
+      default: "dark",
+    },
+  },
+  render() {
+    return ButtonSmallOutlineLight;
+  },
+};
+
 // To add decorators to Storybook HTML the stories need to be generated using the render function with document.createElement, .appendChild, .setAttribute etc
 export const ResponsiveContainerExample = {
   render: (args) => {
@@ -87,7 +102,7 @@ export const ResponsiveContainerExample = {
     },
   ],
   args: {
-    label: "Custom button with click event",
+    label: "Responsive container example",
     onClick: `alert("Button was clicked")`,
   },
   parameters: {
