@@ -10,7 +10,7 @@ const preview = {
     backgrounds: {
       values: [
         { name: "light", value: "#fff" },
-        { name: "dark", value: "#0c2141" },
+        { name: "dark", value: "#131313" },
       ],
     },
     controls: {

@@ -15,6 +15,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "sass-embedded": "^1.78.0",
     "storybook": "^8.3.0",
+    "storybook-dark-mode": "^4.0.2",
     "vite-plugin-handlebars": "^2.0.0"
   },
   "scripts": {
