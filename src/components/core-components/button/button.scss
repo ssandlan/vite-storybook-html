@@ -2,7 +2,7 @@
 
 @mixin apply-hover-transition($initialBackgroundColor, $hoverColor) {
   position: relative;
-  background-clip: padding-box;
+  // background-clip: padding-box;
   z-index: 1;
   overflow: clip;
 
@@ -98,11 +98,11 @@
   button,
   label,
   a {
-    box-sizing: border-box;
-    padding: 1rem var(--spacing-6);
-    min-height: var(--spacing-9);
+    // box-sizing: border-box;
+    padding: 0.75rem calc(var(--spacing-responsive-2) - 0.25rem); // to account for the 4px/0.25rem border
+    min-height: var(--spacing-responsive-3);
     @media (min-width: 37.5rem) {
-      padding: 1rem var(--spacing-8);
+      padding: 0.75rem calc(var(--spacing-responsive-2) - 0.25rem); // to account for the 4px/0.25rem border
     }
   }
 }
@@ -112,6 +112,36 @@
   label,
   a {
     padding: 1rem var(--spacing-7);
+  }
+}
+
+.button-primary-red {
+  @include apply-cta-primary-red;
+  button,
+  label,
+  a {
+    // box-sizing: border-box;
+    background-color: var(--cta-primary-default-background);
+    color: var(--cta-primary-default-text);
+    border: 0.25rem solid var(--cta-primary-default-border);
+
+    @media (hover: hover) and (pointer: fine) {
+      @include apply-hover-transition(
+        var(--cta-full-background),
+        var(--cta-primary-hover-background)
+      );
+
+      &:hover,
+      &:active {
+        color: var(--cta-primary-hover-text);
+        border-color: var(--cta-primary-hover-border);
+      }
+
+      &:focus {
+        color: var(--cta-primary-focused-text);
+        border-color: var(--cta-primary-focused-border);
+      }
+    }
   }
 }
 

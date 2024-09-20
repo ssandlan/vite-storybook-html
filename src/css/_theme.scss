@@ -1,5 +1,7 @@
 :root {
   // COLOURS
+  color-scheme: light dark;
+
   // PRIMARY
 
   --red-100: #ab1236;
@@ -94,6 +96,29 @@
 }
 
 // Button themes
+@mixin apply-cta-primary-red {
+  // Light nd Dark mode are the same for Primary Red button
+  // Default
+  --cta-primary-default-background: var(--red-100);
+  --cta-primary-default-text: var(--white);
+  --cta-primary-default-border: var(--red-100);
+
+  // Hover
+  --cta-primary-hover-background: var(--red-80);
+  --cta-primary-hover-text: var(--white);
+  --cta-primary-hover-border: var(--red-80);
+
+  // Pressed
+  --cta-primary-pressed-background: var(--red-80);
+  --cta-primary-pressed-text: var(--white);
+  --cta-primary-pressed-border: var(--red-80);
+
+  // Focused
+  --cta-primary-focused-background: var(--red-100);
+  --cta-primary-focused-text: var(--white);
+  --cta-primary-focused-border: var(--red-50);
+}
+
 @mixin apply-cta-full-dark {
   // Base
   --cta-full-background: var(--navy-blue-100);

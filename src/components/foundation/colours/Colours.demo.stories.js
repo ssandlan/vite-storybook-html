@@ -1,11 +1,13 @@
 import ColoursExamples from "./Colours.demo.html?raw";
 
-export default {
+const meta = {
   title: "Foundation/Colours",
   tags: ["autodocs"],
 };
 
-export const Colours = {
+export default meta;
+
+export const Demo = {
   parameters: {
     backgrounds: {
       layout: "centered",

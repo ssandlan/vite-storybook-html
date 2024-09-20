@@ -1,3 +1,4 @@
+import ButtonLargePrimaryRed from "./html/ButtonLargePrimaryRed.html?raw";
 import ButtonLargeFullDark from "./html/ButtonLargeFullDark.html?raw";
 import ButtonLargeFullLight from "./html/ButtonLargeFullLight.html?raw";
 import ButtonLargeOutlineDark from "./html/ButtonLargeOutlineDark.html?raw";
@@ -22,6 +23,7 @@ const meta = {
 export default meta;
 
 // To just diplay an external html file as a story, use the following syntax. Note this method does not allow for the use of args and decorators but parameters can be used.
+export const LargePrimaryRed = () => ButtonLargePrimaryRed;
 export const LargeFullDark = () => ButtonLargeFullDark;
 
 export const LargeFullDarkAsLink = () => LinkLargeFullDark;
