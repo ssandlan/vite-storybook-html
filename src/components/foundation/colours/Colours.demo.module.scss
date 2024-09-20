@@ -1,0 +1,76 @@
+@use "./colours.module" as *;
+
+// Export color variables for use in Colour swatch demo.
+:export {
+  red-100: $red-100;
+  red: {
+    red-100: var(--red-100);
+    red-90: var(--red-90);
+    red-80: var(--red-80);
+    red-70: var(--red-70);
+    red-60: var(--red-60);
+    red-50: var(--red-50);
+    red-40: var(--red-40);
+    red-30: var(--red-30);
+    red-20: var(--red-20);
+    red-10: var(--red-10);
+    red-5: var(--red-5);
+  }
+  black: {
+    black-100: var(--black-100);
+    black-95: var(--black-95);
+    black-90: var(--black-90);
+    black-80: var(--black-80);
+    black-70: var(--black-70);
+    black-60: var(--black-60);
+    black-50: var(--black-50);
+    black-40: var(--black-40);
+    black-30: var(--black-30);
+    black-20: var(--black-20);
+    black-10: var(--black-10);
+    black-5: var(--black-5);
+  }
+  white: {
+    white: var(--white);
+  }
+  purple: {
+    purple-100: var(--purple-100);
+    purple-90: var(--purple-90);
+    purple-80: var(--purple-80);
+    purple-70: var(--purple-70);
+    purple-60: var(--purple-60);
+    purple-50: var(--purple-50);
+    purple-40: var(--purple-40);
+    purple-30: var(--purple-30);
+    purple-20: var(--purple-20);
+    purple-10: var(--purple-10);
+    purple-5: var(--purple-5);
+  }
+  pink: {
+    pink-100: var(--pink-100);
+    pink-90: var(--pink-90);
+    pink-80: var(--pink-80);
+    pink-70: var(--pink-70);
+    pink-60: var(--pink-60);
+    pink-50: var(--pink-50);
+    pink-40: var(--pink-40);
+    pink-30: var(--pink-30);
+    pink-20: var(--pink-20);
+    pink-10: var(--pink-10);
+    pink-5: var(--pink-5);
+  }
+  navy: {
+    navy-100: var(--navy-100);
+    navy-90: var(--navy-90);
+    navy-90: var(--navy-90);
+    navy-80: var(--navy-80);
+    navy-70: var(--navy-70);
+    navy-60: var(--navy-60);
+    navy-50: var(--navy-50);
+    navy-40: var(--navy-40);
+    navy-30: var(--navy-30);
+    navy-20: var(--navy-20);
+    navy-10: var(--navy-10);
+    navy-5: var(--navy-5);
+  }
+}

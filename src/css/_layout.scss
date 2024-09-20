@@ -17,6 +17,18 @@
   --spacing-responsive-5: 4.5rem;
   --spacing-responsive-6: 5rem;
 
+  // Radius sizes
+  --radius-small: 0.5rem;
+  --radius-medium: 0.75rem;
+  --radius-large: 3rem;
+
+  // Grid
+  // --grid-gap: 1rem;
+  --grid-columns-s: 6;
+  --grid-columns-m: 6;
+  --grid-columns-l: 12;
+  --grid-columns-xl: 12;
+
   // Medium/Tablet size and up (600px +)
   @media (min-width: 600px) {
     --spacing-6: 2rem;
@@ -40,18 +52,73 @@
     --spacing-responsive-5: 7rem;
     --spacing-responsive-6: 8rem;
   }
+}
 
-  // Radius sizes
-  --radius-small: 0.5rem;
-  --radius-medium: 0.75rem;
-  --radius-large: 3rem;
+// Spacing Demo
 
-  // Grid
-  // --grid-gap: 1rem;
-  --grid-columns-s: 6;
-  --grid-columns-m: 6;
-  --grid-columns-l: 12;
-  --grid-columns-xl: 12;
+.demo-spacing-1 {
+  border: solid rgb(61 148 255) var(--spacing-1);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-2 {
+  border: solid rgb(61 148 255) var(--spacing-2);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-3 {
+  border: solid rgb(61 148 255) var(--spacing-3);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-4 {
+  border: solid rgb(61 148 255) var(--spacing-4);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-5 {
+  border: solid rgb(61 148 255) var(--spacing-5);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-6 {
+  border: solid rgb(61 148 255) var(--spacing-6);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-7 {
+  border: solid rgb(61 148 255) var(--spacing-7);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-responsive-1 {
+  border: solid rgb(61 148 255) var(--spacing-responsive-1);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-responsive-2 {
+  border: solid rgb(61 148 255) var(--spacing-responsive-2);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-responsive-3 {
+  border: solid rgb(61 148 255) var(--spacing-responsive-3);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-responsive-4 {
+  border: solid rgb(61 148 255) var(--spacing-responsive-4);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-responsive-5 {
+  border: solid rgb(61 148 255) var(--spacing-responsive-5);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-responsive-6 {
+  border: solid rgb(61 148 255) var(--spacing-responsive-6);
+  margin: var(--spacing-1) 0;
 }
 
 // Grid Wrapper

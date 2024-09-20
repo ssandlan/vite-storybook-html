@@ -1,0 +1,34 @@
+.demo-spacing-1 {
+  border: solid rgb(61 148 255) var(--spacing-1);
+  margin: var(--spacing-1) 0;
+}
+
+.demo-spacing-2 {
+  border: solid rgb(61 148 255) var(--spacing-2);
+  margin: var(--spacing-2) 0;
+}
+
+.demo-spacing-3 {
+  border: solid rgb(61 148 255) var(--spacing-3);
+  margin: var(--spacing-3) 0;
+}
+
+.demo-spacing-4 {
+  border: solid rgb(61 148 255) var(--spacing-4);
+  margin: var(--spacing-4) 0;
+}
+
+.demo-spacing-5 {
+  border: solid rgb(61 148 255) var(--spacing-5);
+  margin: var(--spacing-5) 0;
+}
+
+.demo-spacing-6 {
+  border: solid rgb(61 148 255) var(--spacing-6);
+  margin: var(--spacing-6) 0;
+}
+
+.demo-spacing-7 {
+  border: solid rgb(61 148 255) var(--spacing-7);
+  margin: var(--spacing-7) 0;
+}

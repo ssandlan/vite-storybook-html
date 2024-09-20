@@ -1,62 +1,96 @@
 :root {
   // COLOURS
   // PRIMARY
-  --teal-140: #3b8783;
-  --teal-120: #479e9a;
-  --teal-100: #77c7c3;
-  --teal-80: #7ac6c2;
-  --teal-40: #a4d8d6;
-  --teal-20: #c2e6e3;
-  --teal-10: #e0f2f1;
-  --teal-5: #eff8f8;
-  --navy-blue-120: #09182e;
-  --navy-blue-100: #0c2141;
-  --navy-blue-90: #21304a;
-  --navy-blue-80: #35445c;
-  --navy-blue-70: #4b596f;
-  --navy-blue-60: #626f82;
-  --navy-blue-50: #7a8596;
-  --navy-blue-40: #949caa;
-  --navy-blue-30: #adb4bf;
-  --navy-blue-20: #c7cdd4;
-  --navy-blue-10: #e3e6e9;
-  --navy-blue-9: #eaeced;
-  --navy-blue-5: #f1f2f4;
-  --denim-100: #00558c;
-  --denim-80: #2d6c99;
-  --denim-50: #5d88b2;
-  --denim-40: #8eb3cb; // (Ceruelan 25)
-  --denim-20: #c5d8e5;
-  --denim-10: #e1ebf1;
-  --denim-5: #f0f5f8;
-  --white: #fff;
+
+  --red-100: #ab1236;
+  --red-90: #b32a4a;
+  --red-80: #bc415e;
+  --red-70: #c45972;
+  --red-60: #cd7186;
+  --red-50: #d5899b;
+  --red-40: #dda0af;
+  --red-30: #e6b8c3;
+  --red-20: #eed0d7;
+  --red-10: #f7e7eb;
+  --red-5: #fbf3f5;
+
+  --black-100: #131313;
+  --black-95: #1f1f1f;
+  --black-90: #2b2b2b;
+  --black-80: #424242;
+  --black-70: #5a5a5a;
+  --black-60: #787878;
+  --black-50: #898989;
+  --black-40: #a1a1a1;
+  --black-30: #b8b8b8;
+  --black-20: #d0d0d0;
+  --black-10: #e7e7e7;
+  --black-5: #f3f3f3;
 
   /* || SECONDARY */
-  --fern-100: #98c396;
-  --fern-80: #a4c8a1;
-  --fern-60: #b9d6b8;
-  --fern-40: #d0e3cf;
-  --fern-20: #e7f1e7;
-  --fern-10: #f4f8f2;
-  --fern-5: #f4f8f2;
-  --goldenrod-100: #ffe9c0;
-  --goldenrod-60: #fff0d4;
-  --goldenrod-40: #fff5e2;
-  --goldenrod-20: #fffaf0;
-  --tangerine-100: #ffd8a5;
-  --tangerine-70: #ffe0b8;
-  --tangerine-30: #fff1e0;
-  --tangerine-20: #fef8f5;
-  --orange-150: #e37149;
-  --orange-100: #f0ac94;
-  --orange-80: #f1b59f;
-  --orange-60: #f5c6b7;
-  --orange-40: #f8d9ce;
-  --orange-20: #fcebe7;
-  --red-120: #c72731;
-  --red-100: #da3943;
-  --red-60: #e9888e;
-  --red-10: #f8d7d9;
+  --white: #fff;
+
+  --purple-100: #640032;
+  --purple-90: #741a47;
+  --purple-80: #83335b;
+  --purple-70: #934d70;
+  --purple-60: #a26684;
+  --purple-50: #b28099;
+  --purple-40: #c199ad;
+  --purple-30: #d1b3c2;
+  --purple-20: #e0ccd6;
+  --purple-10: #f0e6eb;
+  --purple-5: #f6f1f4;
+
+  /* || ACCENT */
+
+  --pink-100: #ee3968;
+  --pink-90: #f04d77;
+  --pink-80: #f16186;
+  --pink-70: #f37495;
+  --pink-60: #f588a4;
+  --pink-50: #f79cb4;
+  --pink-40: #f8b0c3;
+  --pink-30: #fac4d2;
+  --pink-20: #fcd7e1;
+  --pink-10: #fdebf0;
+  --pink-5: #fef4f6;
+
+  --navy-100: #1e1e51;
+  --navy-90: #353562;
+  --navy-80: #4b4b74;
+  --navy-70: #626285;
+  --navy-60: #787897;
+  --navy-50: #8f8fa8;
+  --navy-40: #a5a5b9;
+  --navy-30: #bcbccb;
+  --navy-20: #d2d2dc;
+  --navy-10: #e9e9ee;
+  --navy-5: #f4f4f7;
+}
+
+// COLOUR SWATCHES
+.colour-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 175px));
+  gap: 13px;
+  margin-bottom: 24px;
+  list-style: none;
+
+  li {
+    border-radius: 5px;
+    padding: 5px;
+
+    .colour-swatch {
+      display: block;
+      height: 90px;
+      margin-bottom: 8px;
+      border: 1px solid lightgray;
+    }
+    p {
+      margin: 0;
+    }
+  }
 }
 
 // Button themes
